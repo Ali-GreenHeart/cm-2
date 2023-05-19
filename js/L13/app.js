@@ -23,23 +23,37 @@
 
 
 
-const button = document.querySelector('button')
+// const button = document.querySelector('button')
 
-if (localStorage.getItem('mode') === 'dark') {
-    button.innerHTML = '☀'
-    document.body.classList.add('darkMode')
-} else {
-    button.innerHTML = '🌙'
-    document.body.classList.remove('darkMode')
-}
+// if (localStorage.getItem('mode') === 'dark') {
+//     button.innerHTML = '☀'
+//     document.body.classList.add('darkMode')
+// } else {
+//     button.innerHTML = '🌙'
+//     document.body.classList.remove('darkMode')
+// }
 
-button.onclick = () => {
-    document.body.classList.toggle('darkMode')
-    if (document.body.classList.contains('darkMode')) {
-        button.innerHTML = '☀'
-        localStorage.setItem('mode', 'dark')
-    } else {
-        button.innerHTML = '🌙'
-        localStorage.setItem('mode', 'light')
-    }
-}
+// button.onclick = () => {
+//     document.body.classList.toggle('darkMode')
+//     if (document.body.classList.contains('darkMode')) {
+//         button.innerHTML = '☀'
+//         localStorage.setItem('mode', 'dark')
+//     } else {
+//         button.innerHTML = '🌙'
+//         localStorage.setItem('mode', 'light')
+//     }
+// }
+
+
+
+const clock = document.querySelector('.clock')
+
+
+setInterval(() => {
+    const d = new Date()
+    clock.innerHTML = digitalClock(d)
+}, 1000);
+
+const padZero = (digit) => digit.toString().padStart(2, '0')
+
+const digitalClock = (d) => `${padZero(d.getHours())}:${padZero(d.getMinutes())}:${padZero(d.getSeconds())}`
