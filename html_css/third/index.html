@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio src="./song.mp3"></audio>
+
+    <div class="bear-head">
+        <div class="angel"></div>
+        <div class="ear left-ear"></div>
+        <div class="ear right-ear"></div>
+        <div class="eye left-eye"></div>
+        <div class="eye right-eye"></div>
+        <div class="nose"></div>
+        <div class="mouth"></div>
+        <div class="teddy-bear">
+            Zeyneb, tez sagal novbeti ders burda ol!
+        </div>
+    </div>
+
+
+
+    <script>
+
+        document.querySelector('.bear-head').onmouseover = () => {
+            document.querySelector('audio').play()
+        }
+        document.querySelector('.bear-head').onmouseleave = () => {
+            document.querySelector('audio').pause()
+        }
+
+    </script>
+
+
+
+
+
+
+    <!-- 
+    <div class="grandpa">
+        grandpa
+        <div class="parent">
+            parent
+            <div class="child">child</div>
+        </div>
+    </div> -->
+
+
+
+    <!-- <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <div style="height:200vh;"></div> -->
+    <!-- <div>
+        <p>heyyyy</p>
+    </div>
+    <input type="text"> -->
+
+
+    <!-- <p>2000</p>
+    <p>3000</p>
+    <p>5300</p>
+
+    <input type="text" placeholder="enter your username">
+    <div style="height:200vh;"></div> -->
+</body>
+
+</html>

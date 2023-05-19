@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: bisque;
+}
+
+.card-img-top {
+    border-radius: 20px;
+}

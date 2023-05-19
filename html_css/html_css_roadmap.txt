@@ -1,0 +1,9 @@
+flex
+css grid
+responsive (media query)
+sass, scss (preprocessor)
+bootstrap5, tailwind css
+
+
+transform, transition, animation
+git

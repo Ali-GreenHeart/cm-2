@@ -1,0 +1,98 @@
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+   background-image: url("https://imgs.search.brave.com/wC31jhY5SipvmzJpO5JHuHY0lMhQydoXZxJRLX6sDkk/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/cmplZW0uY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE5LzEx/L3Jvc2Uta2FzaGFz/bi1mZXN0aXZhbC5q/cGc");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.red-yellow-text {
+    background-color: red;
+    color: yellow;
+}
+
+.aqua-brown-text {
+    color: aqua;
+    background-color: brown;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#basliq {
+    text-decoration: underline;
+    font-size: 64px;
+    border: 2px solid green;
+    border-radius: 50%;
+}
+
+.daire {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 44px;
+    padding-left: 29px;
+    background-image: url('https://images.unsplash.com/photo-1544211393-7fdc8fca9f4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80');
+    background-size: cover;
+}
+
+:root {
+    font-size: 20px;
+}
+
+#basliq {
+    font-size: calc(10px + 4vw);
+    font-size: 20px;
+    width: 5rem;
+}
+
+.parent {
+    width: 30vh;
+
+    height: 200px;
+    background-color: green;
+}
+
+.child {
+    width: 50%;
+    height: 30%;
+    background-color: red;
+}
+
+:root {
+    font-size: calc(10px + 4vw);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+#kicik_ekran:root {
+    font-size: 8px;
+}
+
+basliq 16px description 8px #tablet:root {
+    font-size: 12px
+}
+
+basliq 24px desc 12px #desktop:root {
+    font-size: 16px;
+}
+
+basliq 32px desc 16px */
