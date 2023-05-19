@@ -18,3 +18,28 @@
 //         audio.play()
 //     }
 // })
+
+
+
+
+
+const button = document.querySelector('button')
+
+if (localStorage.getItem('mode') === 'dark') {
+    button.innerHTML = '☀'
+    document.body.classList.add('darkMode')
+} else {
+    button.innerHTML = '🌙'
+    document.body.classList.remove('darkMode')
+}
+
+button.onclick = () => {
+    document.body.classList.toggle('darkMode')
+    if (document.body.classList.contains('darkMode')) {
+        button.innerHTML = '☀'
+        localStorage.setItem('mode', 'dark')
+    } else {
+        button.innerHTML = '🌙'
+        localStorage.setItem('mode', 'light')
+    }
+}
