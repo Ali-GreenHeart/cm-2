@@ -65,20 +65,20 @@ class Animal {
     }
 }
 // HUman -> derived, Animal -> super class
-class Human extends Animal {
-    constructor(name, gender, job) {
-        super(name, gender)
-        this.job = job
-    }
-}
-class Test extends Human {
-    constructor(name, gender, job, test) {
-        super(name, gender, job)
-        this.test = test
-    }
-}
-const test = new Human('test', 'k', 'de')
-console.log(test)
+// class Human extends Animal {
+//     constructor(name, gender, job) {
+//         super(name, gender)
+//         this.job = job
+//     }
+// }
+// class Test extends Human {
+//     constructor(name, gender, job, test) {
+//         super(name, gender, job)
+//         this.test = test
+//     }
+// }
+// const test = new Human('test', 'k', 'de')
+// console.log(test)
 
 
 
@@ -91,3 +91,50 @@ console.log(test)
 // class Rectangle extends Shape {
 
 // }
+
+// String
+
+// class NewString extends String {
+//     toCapitalCase() {
+//         return this.replace(this[0], this[0].toUpperCase())
+//     }
+// }
+
+// let ad = new NewString('ali')
+// ad = ad.toCapitalCase()
+// console.log(ad) //Ali
+
+String.prototype.toCapitalCase = function () {
+    return this.replace(this[0], this[0].toUpperCase())
+}
+let ad = 'ali'
+ad = ad.toCapitalCase()
+console.log(ad)
+
+Array.prototype.clear = function () {
+    this.length = 0
+}
+const arr = [1, 2, 3, 3, 45, 6]
+arr.clear()
+console.log(arr)
+
+// String    hide
+String.prototype.hide = function () {
+    return this.slice(0, 3) + '*'.repeat(this.length - 3)
+}
+let soz = 'javascript'
+soz = soz.hide() // jav*******
+let soz1 = 'alion'
+soz1 = soz1.hide() // ali**
+
+Number.prototype.isEven = function () {
+    return this % 2 === 0
+}
+// Number
+const ed = 13
+console.log(ed.isEven()) // false
+const ed2 = 12
+console.log(ed2.isEven()) // true
+
+
+
