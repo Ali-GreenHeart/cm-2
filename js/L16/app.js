@@ -52,3 +52,22 @@
 
 
 
+// // Asynchronous JavaScript And XML  [data format]
+
+// REST API
+// Application Programming Interface
+
+const url = `https://jsonplaceholder.typicode.com/users`
+
+axios.get(url).then((response) => {
+    console.log(response.data)
+})
+
+// fetch(url)
+//     .then((resp) => resp.json())
+//     .then((users) => {
+//         users.forEach((user) => {
+//             document.write(`<p>${user.id}-${user.name}</p>`)
+//         })
+//     })
+
